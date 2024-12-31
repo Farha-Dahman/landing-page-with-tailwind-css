@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@layer components{
+    .wrapper{
+        @apply max-w-[1288px] w-[98%] m-auto
+    }
+    .btn {
+      @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+    }
+    .btn-red {
+      @apply bg-primary text-white;
+    }
+    .btn-white {
+      @apply bg-clr-white;
+    }
+    .divider{
+        @apply w-full h-[1px] bg-clr-white
+    }
+    .heading{
+        @apply leading-tight text-2xl font-bold text-[#111928]
+    }
+}
+
+@layer utilities{
+    .none{
+        display: none;
+    }
+}
